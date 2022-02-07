@@ -13,49 +13,37 @@
 
   <body>
     <section class="main">
-      <section class="page1" id="page1">
+      <section class="page1">
         <div class="intro">
           <h1>
-            STAR WARS DATA<br /><span>Que la force soit avec toi !</span
-            ><br />Menu
+            STAR WARS DATA<br /><span>May the Force be with you !</span>
           </h1>
           <p class="text">
-            Hangman-web consists in creating and running a server, in which it
-            will be possible to use a web GUI (graphical user interface) version
-            of our last project, hangman-classic. We had to use a go module to
-            call our functions from hangman-classic.
-            <br />
-            We needed to create a private repository with the name hangman-web
+            This site was made in 48H since it comes from the Challenge 48h school project Ynov Nantes. 
+            We are a group of computer science students 
+            and we offer you this Star Wars specific QUIZ and Wiki 
           </p>
           <button>PLAY NOW</button>
+          <button>WIKI</button>
         </div>
 
         <div>
           <img
-            class="photopendu"
+            class="photodroid"
             src="https://zupimages.net/up/22/06/ns5k.png"
           />
         </div>
       </section>
     </section>
-    <section class="page2" id="page2">
-      <h2>THE TEAM</h2>
-      <p>Let's introduce ourselves</p>
+    <section class="page2"> <!-- MEttre les boutons ici -->
+
     </section>
-    <section class="page3" id="page3">
-      <h2>Nous trouver</h2>
-      <p>How to play Hangman ?</p>
-      <br />
-      <h3>
-        You have 10 attempts to guess the random word.<br />
-        Every time you make a mistake, José gets closer to death.<br />
-        Don't let José hang himself!<br />
-        Good luck!
-      </h3>
-      <div class="row"></div>
+    <section class="page3">
+      <br/>
+      <br/>
+      <h2>Pour en savoir plus sur notre équipe ....</h2>
     </section>
   </body>
-  {{ end }}
 </template>
 
 <style scoped>
@@ -99,6 +87,7 @@
   transition: 0.8s ease;
   color: rgb(0, 0, 0);
   border-radius: 10%;
+  margin-top: 10px;
 }
 
 .intro > button:hover {
@@ -111,36 +100,7 @@
   font-size: 65px;
 }
 
-.form h2 {
-  text-align: center;
-  color: #000000;
-  font-size: 22px;
-  padding: 8px;
-  text-transform: uppercase;
-}
-
-h3 {
-  text-align: center;
-}
-
-.form > .btn a {
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-
-.form .link {
-  font-size: 17px;
-  padding-top: 20px;
-  text-align: center;
-}
-
-.form .link a {
-  text-decoration: none;
-  color: rgba(218, 207, 55, 0.671);
-}
-
 .page2,
-.page4,
 .page3 {
   border-radius: 5px;
   padding: 10% 15%;
@@ -151,7 +111,6 @@ h3 {
 }
 
 .page2 h2,
-.page4 h2,
 .page3 h2 {
   margin-bottom: 25px;
   font-size: 30px;
@@ -161,66 +120,14 @@ h3 {
 }
 
 .page2 p,
-.page4 p,
 .page3 p {
   text-align: center;
 }
 
-.col {
-  flex-basis: 40%;
-  background: rgba(218, 207, 55, 0.671);
-  border-radius: 10px;
-  padding: 30px 12px;
-  box-sizing: border-box;
-  width: 10px;
-}
-
-.col h3 {
-  text-align: center;
-  font-weight: 600;
-  margin: 10px 0;
-}
-
-.page4-col {
-  flex-basis: 24%;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  position: relative;
-  overflow: hidden;
-}
-
-.page4-col img {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.photoj {
-  height: 500px;
-  margin-left: 5px;
-  margin-right: 30px;
-  border-radius: 40%;
-}
-
-.photopendu {
+.photodroid {
   margin-left: 50px;
   height: 500px;
   height: 900px;
-}
-
-.icontea {
-  height: 80px;
-}
-
-.imgynov {
-  height: 300px;
-}
-
-.photoflav {
-  height: 500px;
-  margin-left: 5px;
-  margin-right: 30px;
-  border-radius: 40%;
 }
 
 </style>

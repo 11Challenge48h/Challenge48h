@@ -2,15 +2,15 @@
 <style>
   * { /*applique à toute la page*/
   margin: 0;/*supprime le contour blanc*/
-  font-family: "Syne Tactile"; /*ou "Prompt", j'ai importé 2 polices qui me plaisaient via google front*/
+  font-family: "Teko"; /*ou "Prompt", j'ai importé 2 polices qui me plaisaient via google front*/
 }
 
 .main {
   padding: 0 15%; /* marges éspacement des bords*/
   background: linear-gradient( /*fond de la première page dégradé*/
       to bottom, /* on peut aussi mettre to top, to right, to left*/
-      rgba(223, 222, 222, 0.5),
-      rgba(218, 207, 55, 0.671) 50%
+      rgba(255, 255, 255, 0.5),
+      rgba(241, 225, 0, 0.671) 50%
     );
   height: 100vh; /*configure pour que la première page remplisse l'écran*/
   display: flex;
@@ -30,7 +30,7 @@
 
 .logo {
   color: #ffffff;
-  font-size: 35px;
+  font-size: 45px;
 }
 
 .menu {
@@ -46,14 +46,14 @@ ul {
 ul li {
   list-style: none;
   padding: 8px 20px 0 20px;
-  font-size: 14px;
+  font-size: 25px;
 }
 
 ul li::after {
   content: "";
   width: 0%;
   height: 2px;
-  background: rgba(218, 207, 55, 0.671);
+  background: rgba(240, 225, 14, 0.671);
   display: block;
   margin: auto;
 }
@@ -71,7 +71,7 @@ ul li a {
 }
 
 ul li a:hover {
-  color: rgba(218, 207, 55, 0.671);
+  color: rgba(240, 225, 14, 0.671)
 }
 
 .page1 {
@@ -95,19 +95,19 @@ ul li a:hover {
 .intro > button {
   margin-left: 25%;
   width: 160px;
-  height: 40px;
-  border: 1px solid #fff;
+  height: 50px;
+  border: 3px solid rgb(0, 0, 0);
   background-color: transparent;
-  font-size: 18px;
+  font-size: 30px;
   cursor: pointer;
   transition: 0.8s ease;
-  color: #fff;
-  border-radius: 20%;
+  color: rgb(0, 0, 0);
+  border-radius: 10%;
 }
 
 .intro > button:hover { 
   color: #000000;
-  transform: scale(1,02);
+  background-color: white;
 }
 
 .intro span {
@@ -170,18 +170,13 @@ h3 {
   text-align: center;
 }
 
-.row {
-  margin-top: 35px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .col {
   flex-basis: 40%;
   background: rgba(218, 207, 55, 0.671);
   border-radius: 10px;
   padding: 30px 12px;
   box-sizing: border-box;
+  width: 10px;
 }
 
 .col h3 {
@@ -243,8 +238,9 @@ h3 {
 }
 
 .photopendu {
-  margin-left: 30px;
+  margin-left: 50px;
   height: 500px;
+  height: 900px
 }
 
 .icontea {
@@ -255,13 +251,6 @@ h3 {
   height: 300px
 }
 
-.photopendu{      
-  transition:transform .9s;
-  opacity: 60%;
-}
-.photopendu:hover{
-  transform:rotate(360deg);
-}
 
 .photoflav{
   height: 500px;
@@ -269,6 +258,112 @@ h3 {
   margin-right: 30px;
   border-radius: 40%;
 }
+
+.logosw{
+  height: 100px
+}
+
+.row {
+  height: 600px;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 500px 100px;
+  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+main#carousel {
+  grid-row: 1 / 2;
+  grid-column: 1 / 8;
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  --items: 5;
+  --middle: 3;
+  --position: 1;
+  pointer-events: none;
+}
+
+div.item {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  background-color: coral;
+  --r: calc(var(--position) - var(--offset));
+  --abs: max(calc(var(--r) * -1), var(--r));
+  transition: all 0.25s linear;
+  transform: rotateY(calc(-10deg * var(--r)))
+    translateX(calc(-300px * var(--r)));
+  z-index: calc((var(--position) - var(--abs)));
+}
+
+div.item:nth-of-type(1) {
+  --offset: 1;
+  <img src="https://zupimages.net/up/22/05/c0t2.jpg">
+}
+div.item:nth-of-type(2) {
+  --offset: 2;
+  background-color: #ff70a6;
+}
+div.item:nth-of-type(3) {
+  --offset: 3;
+  background-color: #ff9770;
+}
+div.item:nth-of-type(4) {
+  --offset: 4;
+  background-color: #ffd670;
+}
+div.item:nth-of-type(5) {
+  --offset: 5;
+  background-color: #e9ff70;
+}
+
+input:nth-of-type(1) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(1):checked ~ main#carousel {
+  --position: 1;
+}
+
+input:nth-of-type(2) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(2):checked ~ main#carousel {
+  --position: 2;
+}
+
+input:nth-of-type(3) {
+  grid-column: 4 /5;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(3):checked ~ main#carousel {
+  --position: 3;
+}
+
+input:nth-of-type(4) {
+  grid-column: 5 / 6;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(4):checked ~ main#carousel {
+  --position: 4;
+}
+
+input:nth-of-type(5) {
+  grid-column: 6 / 7;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(5):checked ~ main#carousel {
+  --position: 5;
+}
+
 </style>
 
 
@@ -278,32 +373,33 @@ h3 {
 
 <!DOCTYPE html>
   <head>
-    <title>Juliette&Flavio's page</title>
-    <link rel="icon" type="image/png" href="https://zupimages.net/up/21/49/jt54.png" />
+    <title>STAR WARS DATA PAGE</title>
+    <link rel="icon" type="image/png" href="https://zupimages.net/up/22/06/fd4e.png" />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Baloo+Bhaijaan+2&family=Cinzel+Decorative&family=Comforter&family=Italianno&family=Press+Start+2P&family=Prompt:wght@200&family=Syne+Tactile&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&family=Supermercado+One&family=Teko:wght@300&display=swap" rel="stylesheet">
     
   </head>
   
   <body>
     <div class="navbar">
       <div class="icon">
-        <h2 class="logo">Barjow & Beurk</h2>
+        <h2 class="logo">STAR WARS DATA</h2>
       </div>
       <div class="menu">
 
         <ul>
-          <li><a href="#page1">Nos fondamentaux</a></li>
-          <li><a href="#page2">The Team</a></li>
-          <li><a href="#page3">Nous trouver</a></li>
-          <li><a href="#git">Réseaux</a></li>
+          <li><a href="#page1">QUIZZ</a></li>
+          <li><a href="#page2">TEAM</a></li>
+          <li><a href="#page3">DATA</a></li>
+          <li><a href="#git">RESEAUX</a></li>
+          <li><img class="logosw" src="https://zupimages.net/up/22/06/fd4e.png"></li>
         </ul>
       </div>
     </div>
     <section class="main">
       <section class="page1" id="page1">
         <div class="intro">
-          <h1>Barjow & Beurk<br/><span>Allez ! on décalent tous chez Barj' !</span><br/>Menu</h1>
+          <h1>STAR WARS DATA<br/><span>Que la force soit avec toi !</span><br/>Menu</h1>
           <p class="text">
             Hangman-web consists in creating and running a server, in which it will be possible to use a web GUI (graphical user interface) version of our last project, hangman-classic.
             We had to use a go module to call our functions from hangman-classic.
@@ -314,7 +410,7 @@ h3 {
         </div>
 
         <div>
-            <img class = "photopendu" src="https://lezebre.lu/images/detailed/68/15276-jeux-cartes-as.png" />
+            <img class = "photopendu" src="https://zupimages.net/up/22/06/ns5k.png" />
         </div>
       </section>
     </section>
@@ -322,18 +418,18 @@ h3 {
       <h2>THE TEAM</h2>
       <p>Let's introduce ourselves</p>
       <div class="row">
-        <div class="col">
-          <h3>Stephane GUENARD</h3>
-          <p>
-            <img class = "photoflav" src="https://zupimages.net/up/22/05/s5kk.jpg" />
-          </p>
-        </div>
-        <div class="col">
-          <h3>Juliette GUENARD</h3>
-          <p>
-            <img class = "photoj" src="https://zupimages.net/up/22/05/c0t2.jpg" />
-          </p>
-        </div>
+          <input type="radio" name="position" checked />
+          <input type="radio" name="position" />
+          <input type="radio" name="position" />
+          <input type="radio" name="position" />
+          <input type="radio" name="position" />
+          <main id="carousel">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <main>
       </div>
     </section>
     <section class="page3" id="page3">

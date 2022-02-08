@@ -2,6 +2,12 @@
 
 cd /home/ubuntu/project/
 
+#Delete old stuff
+rm -rf ./*
+
+#Clone repo
+git clone git@github.com:11Challenge48h/Challenge48h.git .
+
 #Install dependencies
 npm install
 

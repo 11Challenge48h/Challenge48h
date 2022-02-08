@@ -16,9 +16,12 @@
       <section class="page1">
         <div class="intro">
           <h1>
-            STAR WARS DATA<br /><span>May the Force be with you !</span>
+            <div class="Ombre">
+            STAR WARS DATA
+            </div>
+            <span>May the Force be with you !</span>
           </h1>
-          <p class="text">
+          <p class="text Ombre">
             This site was made in 48H since it comes from the Challenge 48h school project Ynov Nantes. 
             We are a group of computer science students 
             and we offer you this Star Wars specific QUIZ and Wiki 
@@ -62,6 +65,10 @@
   color: #fff;
   display: flex;
   margin: 20% 0;
+}
+
+.Ombre {
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .intro .text {

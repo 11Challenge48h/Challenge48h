@@ -54,6 +54,11 @@
     "@vue/compiler-dom" "3.2.30"
     "@vue/shared" "3.2.30"
 
+"@vue/devtools-api@^6.0.0-beta.18":
+  "integrity" "sha512-v6i9kWtUZ3iiOGOj43tkisp0o5RJ9jOG3/tDA48J51TZt31DG4sr49mjaZOG8CkWFVE52bkzyozZmwcNrGNviQ=="
+  "resolved" "https://registry.npmjs.org/@vue/devtools-api/-/devtools-api-6.0.0.tgz"
+  "version" "6.0.0"
+
 "@vue/reactivity-transform@3.2.30":
   "integrity" "sha512-Le5XzCJyK3qTjoTnvQG/Ehu8fYjayauMNFyMaEnwFlm/avDofpuibpS9u+/6AgzsGnVWN+i0Jgf25bJd9DIwMw=="
   "resolved" "https://registry.npmjs.org/@vue/reactivity-transform/-/reactivity-transform-3.2.30.tgz"
@@ -102,13 +107,6 @@
   "resolved" "https://registry.npmjs.org/@vue/shared/-/shared-3.2.30.tgz"
   "version" "3.2.30"
 
-"axios@^0.25.0":
-  "integrity" "sha512-cD8FOb0tRH3uuEe6+evtAbgJtfxr7ly3fQjYcMcuPlgkwVS9xboaVIpcDV+cYQe+yGykgwZCs1pzjntcGa6l5g=="
-  "resolved" "https://registry.npmjs.org/axios/-/axios-0.25.0.tgz"
-  "version" "0.25.0"
-  dependencies:
-    "follow-redirects" "^1.14.7"
-
 "csstype@^2.6.8":
   "integrity" "sha512-ZVxXaNy28/k3kJg0Fou5MiYpp88j7H9hLZp8PDC3jV0WFjfH5E9xHb56L0W59cPbKbcHXeP4qyT8PrHp8t6LcQ=="
   "resolved" "https://registry.npmjs.org/csstype/-/csstype-2.6.19.tgz"
@@ -147,21 +145,8 @@
   "resolved" "https://registry.npmjs.org/estree-walker/-/estree-walker-2.0.2.tgz"
   "version" "2.0.2"
 
-"follow-redirects@^1.14.7":
-  "integrity" "sha512-+hbxoLbFMbRKDwohX8GkTataGqO6Jb7jGwpAlwgy2bIz25XtRm7KEzJM76R1WiNT5SwZkX4Y75SwBolkpmE7iQ=="
-  "resolved" "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.14.7.tgz"
-  "version" "1.14.7"
-
 "function-bind@^1.1.1":
   "integrity" "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A=="
-  "resolved" "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz"
-  "version" "1.1.1"
-
-"has@^1.0.3":
-  "integrity" "sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw=="
-  "resolved" "https://registry.npmjs.org/has/-/has-1.0.3.tgz"
-  "version" "1.0.3"
-  dependencies:
     "function-bind" "^1.1.1"
 
 "is-core-module@^2.8.1":
@@ -250,7 +235,14 @@
   optionalDependencies:
     "fsevents" "~2.3.2"
 
-"vue@^3.2.25", "vue@3.2.30":
+"vue-router@^4.0.12":
+  "integrity" "sha512-CPXvfqe+mZLB1kBWssssTiWg4EQERyqJZes7USiqfW9B5N2x+nHlnsM1D3b5CaJ6qgCvMmYJnz+G0iWjNCvXrg=="
+  "resolved" "https://registry.npmjs.org/vue-router/-/vue-router-4.0.12.tgz"
+  "version" "4.0.12"
+  dependencies:
+    "@vue/devtools-api" "^6.0.0-beta.18"
+
+"vue@^3.0.0", "vue@^3.2.25", "vue@3.2.30":
   "integrity" "sha512-ZmTFWVJUX2XADkuOB8GcLTuxnBLogjJBTNVrM7WsTnjqRQ+VR8bLNrvNsbn8vj/LaP5+0WFAPrpngOYE2x+e+Q=="
   "resolved" "https://registry.npmjs.org/vue/-/vue-3.2.30.tgz"
   "version" "3.2.30"

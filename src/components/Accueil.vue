@@ -41,12 +41,8 @@
       </section>
       <section class="page2">
         <!-- MEttre les boutons ici -->
-        <RouterLink tag="li" class="button1" to="/Quiz"
-          ><button>PLAY NOW</button></RouterLink
-        >
-        <RouterLink tag="li" class="button2" to="/Wiki"
-          ><button>WIKI</button></RouterLink
-        >
+        <RouterLink tag="li" class="button1" to="/Quiz"><button>PLAY NOW</button></RouterLink>
+        <RouterLink tag="li" class="button2" to="/Wiki"><button>WIKI</button></RouterLink>
         <div class="textUnderButton">
           <p>
             You can choose between these two possibilities. The Wiki presents
@@ -70,13 +66,13 @@
 
 <style scoped>
 .main {
-  padding: 0 15%; /* marges éspacement des bords*/
+  padding: 0% 20%;/* marges éspacement des bords */
   background: linear-gradient(
     /*fond de la première page dégradé*/ to bottom,
     /* on peut aussi mettre to top, to right, to left*/ rgba(255, 255, 255, 0.5),
     rgba(241, 225, 0, 0.671) 50%
   );
-  height: 75vh; /*configure pour que la première page remplisse l'écran*/
+  height: 100vh; /*configure pour que la première page remplisse l'écran*/
   display: flex;
 }
 .page1 {
@@ -98,55 +94,56 @@
 }
 .Ombre {
   text-shadow: 3px 3px 7px #000000;
-  font-size: 70px;
+  font-size: 90px;
 }
 
 .textOmbre {
   color: #000;
-  font-size: 20px;
+  font-size: 140%;
+  padding: 0px 100px 0px 0px;
 }
 
 .textUnderButton {
   margin-top: 2%;
-  margin-left: -560px;
-  font-size: 20px;
+  margin-left: -60%;
+  font-size: 130%;
 }
-.page1 .text {
-  padding-bottom: 100px;
+/* .page1 .text {
+  padding-bottom: 50%;
   letter-spacing: 1.2px;
   line-height: 30px;
-}
+} */
 .intro h1 {
-  font-size: 50px;
+  font-size: 150%;
   letter-spacing: 2px;
-  margin-bottom: 35px;
+  margin-bottom: 15%;
 }
 .page2 .button1 button {
-  margin-left: 5%;
-  width: 160px;
+  margin-left: 3%;
+  width: 15%;
   height: 50px;
   border: 3px solid rgb(0, 0, 0);
   background-color: transparent;
-  font-size: 30px;
+  font-size: 150%;
   cursor: pointer;
   transition: 0.8s ease;
   color: rgb(0, 0, 0);
   border-radius: 10%;
-  margin-top: 10px;
+  margin-top: 1%;
 }
 
-.page2 .button2 button {
+.page2 .button2 button{
   margin-left: 3%;
-  width: 160px;
+  width: 15%;
   height: 50px;
   border: 3px solid rgb(0, 0, 0);
   background-color: transparent;
-  font-size: 30px;
+  font-size: 150%;
   cursor: pointer;
   transition: 0.8s ease;
   color: rgb(0, 0, 0);
   border-radius: 10%;
-  margin-top: 10px;
+  margin-top: 1%;
 }
 .page2 .button2 button:hover {
   color: white;
@@ -160,7 +157,7 @@
 }
 .intro span {
   color: #000000;
-  font-size: 35px;
+  font-size: 105%;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 .page2,
@@ -174,11 +171,11 @@
 
 .page3 .buttonTeam button {
   margin-left: 5%;
-  width: 200px;
-  height: 50px;
+  width: 18%;
+  height: 20%;
   border: 4.5px solid rgb(0, 0, 0);
   background-color: transparent;
-  font-size: 30px;
+  font-size: 150%;
   cursor: pointer;
   transition: 0.8s ease;
   color: rgb(0, 0, 0);
@@ -195,8 +192,8 @@
 }
 .page2 h2,
 .page3 h2 {
-  margin-bottom: 25px;
-  font-size: 30px;
+  margin-bottom: 2%;
+  font-size: 200%;
   font-weight: bold;
   color: #000;
   text-align: center;
@@ -206,7 +203,15 @@
   text-align: center;
 }
 .photodroid {
-  margin-left: 50px;
-  height: 900px;
+  height: 200%;
 }
+
+
+@media only screen and (max-width: 1570px) {
+  .main {
+  
+  }
+}
+
+
 </style>

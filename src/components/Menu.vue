@@ -10,10 +10,10 @@ const router = useRouter();
     <div class="navbar">
         <h2 class="logo">STAR WARS DATA</h2>
         <div class="menu">
-            <li><RouterLink to="/">ACCUEIL</RouterLink></li>
-            <li><RouterLink to="/Team">EQUIPE</RouterLink></li>
-            <li><RouterLink to="/Quiz">QUIZ</RouterLink></li> 
-            <li><RouterLink to="/Wiki">WIKI</RouterLink></li> 
+            <li><RouterLink class="li1" to="/">ACCUEIL</RouterLink></li>
+            <li><RouterLink class="li2" to="/Team">EQUIPE</RouterLink></li>
+            <li><RouterLink class="li3" to="/Quiz">QUIZ</RouterLink></li> 
+            <li><RouterLink class="li4" to="/Wiki">WIKI</RouterLink></li> 
             <li>
                 <img class="logosw" src="https://zupimages.net/up/22/06/fd4e.png" />
             </li>
@@ -75,11 +75,20 @@ li a {
   transition: 0.4s ease-in-out;
 }
 
-li ul:hover {
+li .li1:hover {
   color: rgba(240, 225, 14, 0.671);
 }
 
-ul {
-
+li .li2:hover {
+  color: rgba(240, 225, 14, 0.671);
 }
+
+li .li3:hover {
+  color: rgba(240, 225, 14, 0.671);
+}
+
+li .li4:hover {
+  color: rgba(240, 225, 14, 0.671);
+}
+
 </style>

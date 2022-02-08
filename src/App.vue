@@ -1,14 +1,13 @@
 <script setup>
-import Accueil from './components/Accueil.vue';
-import Menu from './components/Menu.vue';
-import Team from './components/Team.vue';
-import {ref} from 'vue';
-
+import Accueil from "./components/Accueil.vue";
+import Menu from "./components/Menu.vue";
+import Team from "./components/Team.vue";
+import { ref } from "vue";
 </script>
 
 <template>
-<Menu />
-<RouterView />
+  <Menu />
+  <RouterView />
 </template>
 
 <style>

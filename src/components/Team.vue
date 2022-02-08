@@ -4,7 +4,7 @@
   <h2>THE TEAM</h2>
   <p>Let's introduce ourselves</p>
   <div class="row">
-    <div class="col">
+    <div class="profil">
       <h2>GUENARD Juliette</h2>
       <h3>B1 informatique Ynov Nantes</h3>
       <a href="https://www.linkedin.com/in/juliette-guenard-2a11ba220/"
@@ -14,7 +14,7 @@
         <img class="people" src="https://zupimages.net/up/22/06/4a5w.png" />
       </p>
     </div>
-    <div class="col">
+    <div class="profil">
       <h2>BOURRY Nathan</h2>
       <h3>B1 informatique Ynov Nantes</h3>
       <a href="https://www.linkedin.com/in/nathan-bourry-6a2709208/"
@@ -24,7 +24,7 @@
         <img class="people" src="https://zupimages.net/up/22/06/3k5e.png" />
       </p>
     </div>
-    <div class="col">
+    <div class="profil">
       <h2>LO Tchu</h2>
       <h3>B3 informatique, dev, Ynov Nantes</h3>
       <a href="https://www.linkedin.com/in/tchu-lo-b07b79226/"
@@ -36,7 +36,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col">
+    <div class="profil">
       <h2>NEIL Romain</h2>
       <h3>B3 informatique, dev, Ynov Nantes</h3>
       <a href="https://www.linkedin.com/in/romain-neil/"
@@ -46,7 +46,7 @@
         <img class="people" src="https://zupimages.net/up/22/06/cnrg.png" />
       </p>
     </div>
-    <div class="col">
+    <div class="profil">
       <h2>CLAVIER Arnaud</h2>
       <h3>B2 informatique Ynov Nantes</h3>
       <a href="https://www.linkedin.com/in/arnaud-clavier-6594111b0/"
@@ -56,7 +56,7 @@
         <img class="people" src="https://zupimages.net/up/22/06/9a2s.png" />
       </p>
     </div>
-    <div class="col">
+    <div class="profil">
       <h2>GRELLIER Mattéo</h2>
       <h3>B2 informatique Ynov Nantes</h3>
       <a href="https://www.linkedin.com/in/matteo-grellier-54a9101a1/"
@@ -82,24 +82,24 @@
   justify-content: space-between;
 }
 
-.col {
+.profil {
   flex-basis: 25%;
   background: black;
   border-radius: 10px;
-  padding: 0px 20px;
+  padding: 3px 20px;
   box-sizing: border-box;
   margin: 50px;
   box-shadow: 15px 15px 15px grey;
 }
 
-.col h2 {
+.profil h2 {
   text-align: center;
   margin: 10px 0;
   color: white;
   font-size: xx-large;
 }
 
-.col h3 {
+.profil h3 {
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
@@ -107,7 +107,7 @@
   font-family: "Prompt";
 }
 
-.col img {
+.profil img {
   width: 100%;
   height: 100%;
   display: block;

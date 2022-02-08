@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd /home/ubuntu/project/
+
 #Build app
 npm run build
 

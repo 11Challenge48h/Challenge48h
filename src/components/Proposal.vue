@@ -45,7 +45,7 @@
 	p {
 		background-color: dodgerblue;
 		border-radius: 10px;
-		width: 150px;
+		width: 400px;
 		
 		/*margin-left: auto;*/
 		/*margin-right: auto;*/

@@ -1,6 +1,13 @@
 <script setup></script>
 
 <template>
+ <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&family=Supermercado+One&family=Teko:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>STAR WARS DATA PAGE</title>
+  </head>
   <h2>THE TEAM</h2>
   <p>Let's introduce ourselves</p>
   <div class="row">

@@ -1,21 +1,28 @@
 <script setup>
+import { useRouter } from 'vue-router';
+import { RouterLink, RouterView } from 'vue-router';
+
+const router = useRouter();
+
 </script>
-    
+
 <template>
     <div class="navbar">
         <h2 class="logo">STAR WARS DATA</h2>
         <div class="menu">
-              <li><div class="effet"><RouterLink to="/quizz">QUIZZ</RouterLink></div></li>
-              <li><div class="effet"><RouterLink to="/wiki">WIKI</RouterLink></div></li> 
-              <li><div class="effet"><RouterLink to="/Team">TEAM</RouterLink></div></li>
-              <li>
+            <li><RouterLink to="/">ACCUEIL</RouterLink></li>
+            <li><RouterLink to="/Team">EQUIPE</RouterLink></li>
+            <li><RouterLink to="/Quiz">QUIZ</RouterLink></li> 
+            <li><RouterLink to="/Wiki">WIKI</RouterLink></li> 
+            <li>
                 <img class="logosw" src="https://zupimages.net/up/22/06/fd4e.png" />
-              </li>
+            </li>
         </div>
     </div>
 </template>
 
 <style>
+
 .navbar {
   height: 100px;
   display: flex;
@@ -37,9 +44,11 @@
   justify-content: center;
   align-items: center;
 }
+
 .logosw {
   height: 100px;
 }
+
 li {
   list-style: none;
   padding: 8px 20px 0 20px;
@@ -53,17 +62,24 @@ li::after {
   display: block;
   margin: auto;
 }
+
 li:hover::after {
   width: 100%;
 }
-li .effet {
+
+li a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
   transition: 0.4s ease-in-out;
 }
-li .effet:hover {
+
+li ul:hover {
   color: rgba(240, 225, 14, 0.671);
+}
+
+ul {
+
 }
 </style>

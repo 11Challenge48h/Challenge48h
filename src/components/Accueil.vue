@@ -1,5 +1,4 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
   <head>
@@ -11,49 +10,60 @@
   </head>
   <body>
     <div class="optionaladd">
-      <button type="title" title="Ynov" onclick="window.location.href='https://www.ynov.com/';" id="button-sticky"></button>
-    <section class="main">
-      <section class="page1">
-        <div class="intro">
-          <h1>
-            <div class="Ombre">
-            STAR WARS DATA
-            </div>
-            <span>May the Force be with you !</span>
-          </h1>
-          <p class="textOmbre">
-            This site was made in 48H since it comes from the Challenge 48h school project Ynov Nantes. <br>
-            We are a group of computer science students 
-            and we offer you this Star Wars specific QUIZ and Wiki 
-          </p>
-          
-        </div>
+      <button
+        type="title"
+        title="Ynov"
+        onclick="window.location.href='https://www.ynov.com/';"
+        id="button-sticky"
+      ></button>
+      <section class="main">
+        <section class="page1">
+          <div class="intro">
+            <h1>
+              <div class="Ombre">STAR WARS DATA</div>
+              <span>May the Force be with you !</span>
+            </h1>
+            <p class="textOmbre">
+              This site was made in 48H since it comes from the Challenge 48h
+              school project Ynov Nantes. <br />
+              We are a group of computer science students and we offer you this
+              Star Wars specific QUIZ and Wiki
+            </p>
+          </div>
 
-        <div>
-          <img
-            class="photodroid"
-            src="https://zupimages.net/up/22/06/ns5k.png"
-          />
+          <div>
+            <img
+              class="photodroid"
+              src="https://zupimages.net/up/22/06/ns5k.png"
+            />
+          </div>
+        </section>
+      </section>
+      <section class="page2">
+        <!-- MEttre les boutons ici -->
+        <RouterLink tag="li" class="button1" to="/Quiz"
+          ><button>PLAY NOW</button></RouterLink
+        >
+        <RouterLink tag="li" class="button2" to="/Wiki"
+          ><button>WIKI</button></RouterLink
+        >
+        <div class="textUnderButton">
+          <p>
+            You can choose between these two possibilities. The Wiki presents
+            all the data of the Star Wars universe in the form of <br />
+            categories such as planets, species, characters, etc... The Quizz
+            allows the discovery of the Star Wars universe in a lucrative way.
+          </p>
         </div>
       </section>
-    </section>
-    <section class="page2"> <!-- MEttre les boutons ici -->
-     <RouterLink tag="li" class="button1" to="/quizz"><button>PLAY NOW</button></RouterLink>
-     <RouterLink tag="li" class="button2" to="/wiki"><button>WIKI</button></RouterLink>
-     <div class="textUnderButton">
-      <p>
-       You can choose between these two possibilities.
-The Wiki presents all the data of the Star Wars universe in the form of <br> 
-categories such as planets, species, characters, etc... The Quizz allows the discovery of the Star Wars universe in a lucrative way.
-      </p>
-     </div>
-    </section>
-    <section class="page3">
-      <br/>
-      <br/>
-      <h2>Pour en savoir plus sur notre équipe ....</h2>
-      <RouterLink tag="li" class="buttonTeam" to="/Team"><button>Team Challenge 48h</button></RouterLink>
-    </section>
+      <section class="page3">
+        <br />
+        <br />
+        <h2>Pour en savoir plus sur notre équipe ....</h2>
+        <RouterLink tag="li" class="buttonTeam" to="/Team"
+          ><button>Team Challenge 48h</button></RouterLink
+        >
+      </section>
     </div>
   </body>
 </template>
@@ -75,10 +85,10 @@ categories such as planets, species, characters, etc... The Quizz allows the dis
   margin: 20% 0;
 }
 .optionaladd #button-sticky {
-  position:fixed;
-  bottom:3%;
-  right:2%;
-  z-index:9999;
+  position: fixed;
+  bottom: 3%;
+  right: 2%;
+  z-index: 9999;
 }
 
 .optionaladd #button-sticky:hover {
@@ -91,13 +101,13 @@ categories such as planets, species, characters, etc... The Quizz allows the dis
   font-size: 70px;
 }
 
-.textOmbre{
+.textOmbre {
   color: #000;
   font-size: 20px;
 }
 
 .textUnderButton {
-  margin-top: 2%; 
+  margin-top: 2%;
   margin-left: -560px;
   font-size: 20px;
 }
@@ -111,7 +121,7 @@ categories such as planets, species, characters, etc... The Quizz allows the dis
   letter-spacing: 2px;
   margin-bottom: 35px;
 }
-.page2 .button1 button{
+.page2 .button1 button {
   margin-left: 5%;
   width: 160px;
   height: 50px;
@@ -125,7 +135,7 @@ categories such as planets, species, characters, etc... The Quizz allows the dis
   margin-top: 10px;
 }
 
-.page2 .button2 button{
+.page2 .button2 button {
   margin-left: 3%;
   width: 160px;
   height: 50px;
@@ -151,7 +161,7 @@ categories such as planets, species, characters, etc... The Quizz allows the dis
 .intro span {
   color: #000000;
   font-size: 35px;
-  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 .page2,
 .page3 {
@@ -159,10 +169,10 @@ categories such as planets, species, characters, etc... The Quizz allows the dis
   padding: 10% 15%;
 }
 .page3 {
-background-color: rgb(179, 174, 174)
+  background-color: rgb(179, 174, 174);
 }
 
-.page3 .buttonTeam button{
+.page3 .buttonTeam button {
   margin-left: 5%;
   width: 200px;
   height: 50px;

@@ -1,18 +1,23 @@
-<script setup>
-</script>
-    
+<script setup></script>
+
 <template>
-    <div class="navbar">
-        <h2 class="logo">STAR WARS DATA</h2>
-        <div class="menu">
-              <li><div class="effet"><RouterLink to="/quizz">QUIZZ</RouterLink></div></li>
-              <li><div class="effet"><RouterLink to="/wiki">WIKI</RouterLink></div></li> 
-              <li><div class="effet"><RouterLink to="/Team">TEAM</RouterLink></div></li>
-              <li>
-                <img class="logosw" src="https://zupimages.net/up/22/06/fd4e.png" />
-              </li>
-        </div>
+  <div class="navbar">
+    <h2 class="logo">STAR WARS DATA</h2>
+    <div class="menu">
+      <li>
+        <div class="effet"><RouterLink to="/quizz">QUIZZ</RouterLink></div>
+      </li>
+      <li>
+        <div class="effet"><RouterLink to="/wiki">WIKI</RouterLink></div>
+      </li>
+      <li>
+        <div class="effet"><RouterLink to="/Team">TEAM</RouterLink></div>
+      </li>
+      <li>
+        <img class="logosw" src="https://zupimages.net/up/22/06/fd4e.png" />
+      </li>
     </div>
+  </div>
 </template>
 
 <style>

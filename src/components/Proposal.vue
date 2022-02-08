@@ -1,38 +1,43 @@
 <script setup>
+	import {ref} from "vue";
+	
 	defineProps({
 		question: Array
 	})
 	
-	const emit = defineEmits(["incPt"])
+	const alreadyAnswered = ref(false);
 	
+	const emit = defineEmits(["incPt"])
 	function getAnswerText(answer) {
 		return answer[0]
-	}
 	
+	}
 	function isAnswerCorrect(answer) {
 		return answer[1] === true
-	}
 	
+	}
 	function getQuestionText(q) {
 		return q[0]
-	}
 	
+	}
 	function getAnswers(q) {
 		return q[1]
-	}
 	
+	}
 	function verifySelectedAnswer(ans) {
-		if(ans[1] === true) {
+		if(ans[1] === true && alreadyAnswered.value === false) {
+			alreadyAnswered.value = true
 			emit('incPt')
 		}
-	}
 	
+	}
 	function getClass(ans) {
 		if(ans[1] === true) {
 			return "s"
-		}
 		
+		}
 		return "e"
+	
 	}
 </script>
 

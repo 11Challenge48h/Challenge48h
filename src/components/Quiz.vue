@@ -95,15 +95,16 @@
 </script>
 
 <template>
-	<h1>Points : {{ points }}</h1>
-	<div class="questions">
-		<Proposal v-for="question in questions" :question="question" @incPt="addPoint" />
+	<div>
+		<h1>Points : {{ points }}</h1>
+		<div class="questions">
+			<Proposal v-for="question in questions" :question="question" @incPt="addPoint" />
+		</div>
 	</div>
 </template>
 
-<style scoped>
-	h1 {
-		position: fixed;
-		left: 50px;
+<style>
+	div.navbar {
+		position: unset!important;
 	}
 </style>

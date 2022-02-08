@@ -76,7 +76,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .fond {
   background: linear-gradient(
     to bottom,

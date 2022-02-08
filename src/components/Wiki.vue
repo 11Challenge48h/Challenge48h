@@ -450,7 +450,7 @@ function showFilms() {
   </div>
 </template>
 
-<style>
+<style scoped>
 .fond {
   background: linear-gradient(
     /*fond de la première page dégradé*/ to bottom,

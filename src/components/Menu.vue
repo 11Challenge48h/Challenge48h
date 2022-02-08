@@ -20,7 +20,7 @@ const router = useRouter();
   </div>
 </template>
 
-<style>
+<style scoped>
 .navbar {
   height: 100px;
   display: flex;

@@ -103,7 +103,7 @@ function addPoint() {
 }
 </script>
 
-<template>
+<template scoped>
   <link
     href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&family=Supermercado+One&family=Teko:wght@300&display=swap"
     rel="stylesheet"

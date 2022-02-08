@@ -206,8 +206,8 @@
   text-align: center;
 }
 .photodroid {
-  margin-left: 50px;
-  height: 500px;
+  margin-left: 80%;
+  width: 500px;
   height: 900px;
 }
 </style>

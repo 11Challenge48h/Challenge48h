@@ -8,6 +8,8 @@ rm -rf ./project
 #Clone repo
 git clone git@github.com:11Challenge48h/Challenge48h.git ./project
 
+cd project
+
 #Install dependencies
 npm install
 

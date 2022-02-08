@@ -6,9 +6,9 @@
     <div class="navbar">
         <h2 class="logo">STAR WARS DATA</h2>
         <div class="menu">
-              <li><div class="test">QUIZZ</div></li> <!-- LIEN vers d'autres composants -->
-              <li><div class="test">WIKI</div></li> <!-- A voir pour enlever la balise a -->
-              <li><div class="test">TEAM</div></li>
+              <li><div class="effet"><RouterLink to="/quizz">QUIZZ</RouterLink></div></li>
+              <li><div class="effet"><RouterLink to="/wiki">WIKI</RouterLink></div></li> 
+              <li><div class="effet"><RouterLink to="/Team">TEAM</RouterLink></div></li>
               <li>
                 <img class="logosw" src="https://zupimages.net/up/22/06/fd4e.png" />
               </li>
@@ -65,7 +65,7 @@ li:hover::after {
   width: 100%;
 }
 
-li .test {
+li .effet {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
@@ -73,7 +73,7 @@ li .test {
   transition: 0.4s ease-in-out;
 }
 
-li .test:hover {
+li .effet:hover {
   color: rgba(240, 225, 14, 0.671);
 }
 

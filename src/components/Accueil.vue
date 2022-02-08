@@ -10,7 +10,6 @@
     />
     <title>STAR WARS DATA PAGE</title>
   </head>
-
   <body>
     <section class="main">
       <section class="page1">
@@ -26,8 +25,7 @@
             We are a group of computer science students 
             and we offer you this Star Wars specific QUIZ and Wiki 
           </p>
-          <button>PLAY NOW</button>
-          <button>WIKI</button>
+          
         </div>
 
         <div>
@@ -39,7 +37,8 @@
       </section>
     </section>
     <section class="page2"> <!-- MEttre les boutons ici -->
-
+      <RouterLink to="/quizz"><button>PLAY NOW</button></RouterLink>
+      <RouterLink to="/wiki"><button>WIKI</button></RouterLink>
     </section>
     <section class="page3">
       <br/>
@@ -83,7 +82,7 @@
   margin-bottom: 35px;
 }
 
-.intro > button {
+.page2 > button {
   margin-left: 25%;
   width: 160px;
   height: 50px;

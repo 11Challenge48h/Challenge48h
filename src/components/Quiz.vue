@@ -4,7 +4,7 @@ import { ref } from "vue";
 
 const questions = ref([]);
 
-questions.value.push([
+/*questions.value.push([
   "L'ordre des épisodes 1,2, 3 est le suivant :",
   [
     [
@@ -92,11 +92,100 @@ questions.value.push([
     ["Wookies", false],
     ["Gungans", false],
   ],
-]);
+]);*/
 
 const points = ref(0);
 
+function createQuestion(category, obj) {
+	let name = obj.name;
+	let attr = "";
+	let correct;
+	
+	const r = rand(1, 2);
+	
+	console.log("obj = ", obj)
+	
+	if(category === "people") {
+		if(r === 1) {
+			attr = "height";
+			correct = obj.height;
+		} else {
+			attr = "birth year";
+			correct = obj.birth_year;
+		}
+	} else if (category === "planets") {
+		if(r === 1) {
+			attr = "rotation period";
+			correct = obj.rotation_period;
+		} else {
+			attr = "population";
+			correct = obj.population;
+		}
+	} else if(category === "starships") {
+		if(r === 1) {
+			attr = "cost in credits";
+			correct = obj.cost_in_credits;
+		} else {
+			attr = "crew";
+			correct = obj.crew;
+		}
+	}
+	
+	console.log('Question : [', attr, ' - ', correct, ']')
+	
+	//On génère les fausses valeurs
+	
+	return [
+		"What is the " + attr + " of " + name + " ?",
+		[
+			[correct, true],
+			[rand(0, 175), false],
+			[rand(190, 20000), false],
+		]
+	]
+}
 
+function rand(min, max) {
+	min = Math.ceil(min);
+	max = Math.floor(max);
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+async function loadData() {
+	const apiBase = 'https://swapi.dev/api';
+	
+	for(let i = 0; i < 6; i++) {
+		let cat = "";
+		let ra = rand(1, 4);
+		
+		switch(rand(1, 3)) {
+			case 1:
+				cat = "people"
+				break;
+			case 2:
+				cat = "starships"
+				ra += 8;
+				break;
+			case 3:
+				cat = "planets"
+				break;
+			default:
+				cat = "people";
+				break;
+		}
+		
+		const r = await	fetch(`${apiBase}/${cat}/${ra}`);
+		
+		if(r.status === 200) {
+			const result = await r.json();
+			
+			questions.value.push(createQuestion(cat, result))
+		}
+	
+	}
+}
+
+loadData()
 
 function addPoint() {
   points.value += 1;

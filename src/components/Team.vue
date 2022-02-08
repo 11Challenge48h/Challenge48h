@@ -9,8 +9,6 @@
       />
       <title>STAR WARS DATA PAGE</title>
     </head>
-    <h2>THE TEAM</h2>
-    <p>Let's introduce ourselves</p>
     <div class="row">
       <div class="profil">
         <h2>GUENARD Juliette</h2>
@@ -81,8 +79,8 @@
 <style>
 .fond {
   background: linear-gradient(
-    /*fond de la première page dégradé*/ to bottom,
-    /* on peut aussi mettre to top, to right, to left*/ rgba(255, 255, 255, 0.5),
+    to bottom,
+    rgba(255, 255, 255, 0.5),
     rgba(241, 225, 0, 0.671) 50%
   );
 }

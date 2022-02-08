@@ -41,10 +41,10 @@
       </section>
       <section class="page2">
         <!-- MEttre les boutons ici -->
-        <RouterLink tag="li" class="button1" to="/quizz"
+        <RouterLink tag="li" class="button1" to="/Quiz"
           ><button>PLAY NOW</button></RouterLink
         >
-        <RouterLink tag="li" class="button2" to="/wiki"
+        <RouterLink tag="li" class="button2" to="/Wiki"
           ><button>WIKI</button></RouterLink
         >
         <div class="textUnderButton">

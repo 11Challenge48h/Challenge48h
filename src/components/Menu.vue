@@ -10,16 +10,13 @@ const router = useRouter();
     <div class="navbar">
         <h2 class="logo">STAR WARS DATA</h2>
         <div class="menu">
-            <ul>
             <li><RouterLink to="/">ACCUEIL</RouterLink></li>
             <li><RouterLink to="/Team">EQUIPE</RouterLink></li>
-            <!--li><RouterLink to="Quiz">QUIZ</RouterLink></li> 
-            <li><RouterLink to="Wiki">WIKI</RouterLink></li--> 
-            <ul>
+            <li><RouterLink to="/Quiz">QUIZ</RouterLink></li> 
+            <li><RouterLink to="/Wiki">WIKI</RouterLink></li> 
+            <li>
                 <img class="logosw" src="https://zupimages.net/up/22/06/fd4e.png" />
-            </ul>
-            <RouterView></RouterView>
-            </ul>
+            </li>
         </div>
     </div>
 </template>

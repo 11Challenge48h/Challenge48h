@@ -1,0 +1,22 @@
+name: "deploy to server"
+on: [push]
+jobs:
+  deploy-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '15'
+      - run: npm install
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          known_hosts: 'just-a-placeholder-so-we-dont-get-errors'
+      - name: log installed key
+        run: cat /home/runner/.ssh/id_rsa
+      - name: Install know host file
+        run: ssh-keyscan -H 51.83.35.131 >> ~/.ssh/known_hosts
+      - name: Deploy with rsync
+        run: rsync -avz ./ ubuntu@51.83.35.131:/home/ubuntu/project/

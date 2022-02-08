@@ -26,11 +26,19 @@
 			emit('incPt')
 		}
 	}
+	
+	function getClass(ans) {
+		if(ans[1] === true) {
+			return "s"
+		}
+		
+		return "e"
+	}
 </script>
 
 <template>
 	<h2>{{ getQuestionText(question) }}</h2>
-	<p v-for="(a, i) in getAnswers(question)" @click="verifySelectedAnswer(a)">{{ i }}. {{ getAnswerText(a) }}</p>
+	<p v-for="(a, i) in getAnswers(question)" @click="verifySelectedAnswer(a)" :class="getClass(a)">{{ i }}. {{ getAnswerText(a) }}</p>
 </template>
 
 <style scoped>
@@ -41,5 +49,19 @@
 		
 		margin-left: auto;
 		margin-right: auto;
+		
+		color: white;
+	}
+	
+	p:active {
+		background-color: #2c3e50;
+	}
+	
+	.s:active {
+		background-color: green;
+	}
+	
+	.e:active {
+		background-color: red;
 	}
 </style>

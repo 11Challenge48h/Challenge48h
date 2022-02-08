@@ -102,5 +102,8 @@
 </template>
 
 <style scoped>
-
+	h1 {
+		position: fixed;
+		left: 50px;
+	}
 </style>

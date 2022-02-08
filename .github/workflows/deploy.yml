@@ -15,6 +15,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           known_hosts: 'just-a-placeholder-so-we-dont-get-errors'
       - name: Install know host file
-        run: ssh-keyscan -H 51.83.35.131 >> ~/.ssh/known_hosts
+        run: ssh-keyscan -H ${{ SSH_HOST }} >> ~/.ssh/known_hosts
       - name: Deploy with rsync
-        run: rsync -avz ./ ubuntu@51.83.35.131:/home/ubuntu/project/
+        run: rsync -avz ./ ubuntu@${{ SSH_HOST }}:/home/ubuntu/project/

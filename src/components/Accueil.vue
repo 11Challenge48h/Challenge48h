@@ -1,12 +1,10 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
- <head>
-    <link 
-    href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&family=Supermercado+One&family=Teko:wght@300&display=swap"
-    rel="stylesheet"
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&family=Supermercado+One&family=Teko:wght@300&display=swap"
+      rel="stylesheet"
     />
     <title>STAR WARS DATA PAGE</title>
   </head>
@@ -166,35 +164,6 @@ h3 {
   text-align: center;
 }
 
-.col {
-  flex-basis: 40%;
-  background: rgba(218, 207, 55, 0.671);
-  border-radius: 10px;
-  padding: 30px 12px;
-  box-sizing: border-box;
-  width: 10px;
-}
-
-.col h3 {
-  text-align: center;
-  font-weight: 600;
-  margin: 10px 0;
-}
-
-.page4-col {
-  flex-basis: 24%;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  position: relative;
-  overflow: hidden;
-}
-
-.page4-col img {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
 .photoj {
   height: 500px;
   margin-left: 5px;
@@ -222,5 +191,4 @@ h3 {
   margin-right: 30px;
   border-radius: 40%;
 }
-
 </style>

@@ -1,0 +1,92 @@
+<script setup></script>
+
+<template>
+  <h2>THE TEAM</h2>
+  <p>Let's introduce ourselves</p>
+  <div class="row">
+    <div class="col">
+      <h2>GUENARD Juliette</h2>
+      <h3>B1 informatique Ynov Nantes</h3>
+      <p>
+        <img class="people" src="https://zupimages.net/up/22/06/4a5w.png" />
+      </p>
+    </div>
+    <div class="col">
+      <h2>BOURRY Nathan</h2>
+      <h3>B1 informatique Ynov Nantes</h3>
+      <p>
+        <img class="people" src="https://zupimages.net/up/22/06/3k5e.png" />
+      </p>
+    </div>
+    <div class="col">
+      <h2>LO Tchu</h2>
+      <h3>B3 informatique, dev, Ynov Nantes</h3>
+      <p>
+        <img class="people" src="https://zupimages.net/up/22/06/cygd.png" />
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h2>NEIL Romain</h2>
+      <h3>B3 informatique, dev, Ynov Nantes</h3>
+      <p>
+        <img class="people" src="https://zupimages.net/up/22/06/cnrg.png" />
+      </p>
+    </div>
+    <div class="col">
+      <h2>CLAVIER Arnaud</h2>
+      <h3>B2 informatique Ynov Nantes</h3>
+      <p>
+        <img class="people" src="https://zupimages.net/up/22/06/9a2s.png" />
+      </p>
+    </div>
+    <div class="col">
+      <h2>GRELLIER Mattéo</h2>
+      <h3>B2 informatique Ynov Nantes</h3>
+      <p>
+        <img class="people" src="https://zupimages.net/up/22/06/fzpk.png" />
+      </p>
+    </div>
+  </div>
+</template>
+
+<style>
+.row {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 25%;
+  background: black;
+  border-radius: 10px;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  margin: 50px;
+  box-shadow: 15px 15px 15px grey;
+}
+
+.col h2 {
+  text-align: center;
+  margin: 10px 0;
+  color: white;
+  font-size: xx-large;
+  margin-bottom: -14px;
+}
+
+.col h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+  color: white;
+  font-family: "Prompt";
+}
+
+.col img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+</style>

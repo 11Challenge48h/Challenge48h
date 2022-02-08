@@ -45,12 +45,13 @@
 	p {
 		background-color: dodgerblue;
 		border-radius: 10px;
-		width: 400px;
-		
-		/*margin-left: auto;*/
-		/*margin-right: auto;*/
+		width: fit-content;
 		
 		color: white;
+		
+		margin-bottom: 15px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	
 	p:active {

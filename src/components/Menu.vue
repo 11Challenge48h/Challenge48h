@@ -1,28 +1,26 @@
 <script setup>
-import { useRouter } from 'vue-router';
-import { RouterLink, RouterView } from 'vue-router';
+import { useRouter } from "vue-router";
+import { RouterLink, RouterView } from "vue-router";
 
 const router = useRouter();
-
 </script>
 
 <template>
-    <div class="navbar">
-        <h2 class="logo">STAR WARS DATA</h2>
-        <div class="menu">
-            <li><RouterLink to="/">ACCUEIL</RouterLink></li>
-            <li><RouterLink to="/Team">EQUIPE</RouterLink></li>
-            <li><RouterLink to="/Quiz">QUIZ</RouterLink></li> 
-            <li><RouterLink to="/Wiki">WIKI</RouterLink></li> 
-            <li>
-                <img class="logosw" src="https://zupimages.net/up/22/06/fd4e.png" />
-            </li>
-        </div>
+  <div class="navbar">
+    <h2 class="logo">STAR WARS DATA</h2>
+    <div class="menu">
+      <li><RouterLink class="one" to="/">ACCUEIL</RouterLink></li>
+      <li><RouterLink class="two" to="/Team">EQUIPE</RouterLink></li>
+      <li><RouterLink class="three" to="/Quiz">QUIZ</RouterLink></li>
+      <li><RouterLink class="four" to="/Wiki">WIKI</RouterLink></li>
+      <li>
+        <img class="logosw" src="https://zupimages.net/up/22/06/fd4e.png" />
+      </li>
     </div>
+  </div>
 </template>
 
 <style>
-
 .navbar {
   height: 100px;
   display: flex;
@@ -75,11 +73,16 @@ li a {
   transition: 0.4s ease-in-out;
 }
 
-li ul:hover {
+li .one:hover {
   color: rgba(240, 225, 14, 0.671);
 }
-
-ul {
-
+li .two:hover {
+  color: rgba(240, 225, 14, 0.671);
+}
+li .three:hover {
+  color: rgba(240, 225, 14, 0.671);
+}
+li .four:hover {
+  color: rgba(240, 225, 14, 0.671);
 }
 </style>

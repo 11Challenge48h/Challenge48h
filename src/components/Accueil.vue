@@ -76,7 +76,7 @@
     /* on peut aussi mettre to top, to right, to left*/ rgba(255, 255, 255, 0.5),
     rgba(241, 225, 0, 0.671) 50%
   );
-  height: 75vh; /*configure pour que la première page remplisse l'écran*/
+  height: 100vh; /*configure pour que la première page remplisse l'écran*/
   display: flex;
 }
 .page1 {
@@ -117,7 +117,7 @@
   line-height: 30px;
 }
 .intro h1 {
-  font-size: 50px;
+  font-size: xx-large;
   letter-spacing: 2px;
   margin-bottom: 35px;
 }

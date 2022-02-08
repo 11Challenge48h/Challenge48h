@@ -7,9 +7,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.25",
-    "vue-carousel": "^0.18.0",
-    "vue-slick-carousel": "^1.0.6"
+    "vue": "^3.2.25"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.0.0",

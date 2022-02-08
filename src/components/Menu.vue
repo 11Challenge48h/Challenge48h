@@ -9,8 +9,8 @@ const router = useRouter();
   <div class="navbar">
     <h2 class="logo">STAR WARS DATA</h2>
     <div class="menu">
-      <li><RouterLink class="one" to="/">ACCUEIL</RouterLink></li>
-      <li><RouterLink class="two" to="/Team">EQUIPE</RouterLink></li>
+      <li><RouterLink class="one" to="/">MENU</RouterLink></li>
+      <li><RouterLink class="two" to="/Team">TEAM</RouterLink></li>
       <li><RouterLink class="three" to="/Quiz">QUIZ</RouterLink></li>
       <li><RouterLink class="four" to="/Wiki">WIKI</RouterLink></li>
       <li>

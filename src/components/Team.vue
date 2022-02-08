@@ -14,7 +14,7 @@
     <div class="row">
       <div class="profil">
         <h2>GUENARD Juliette</h2>
-        <h3>B1 informatique Ynov Nantes</h3>
+        <h3>B1 Computer Science Ynov Nantes</h3>
         <a href="https://www.linkedin.com/in/juliette-guenard-2a11ba220/"
           ><img class="linkedin" src="https://zupimages.net/up/22/06/5t0a.png"
         /></a>
@@ -24,7 +24,7 @@
       </div>
       <div class="profil">
         <h2>GRELLIER Mattéo</h2>
-        <h3>B2 informatique Ynov Nantes</h3>
+        <h3>B2 Computer Science Ynov Nantes</h3>
         <a href="https://www.linkedin.com/in/matteo-grellier-54a9101a1/"
           ><img class="linkedin" src="https://zupimages.net/up/22/06/5t0a.png"
         /></a>
@@ -34,7 +34,7 @@
       </div>
       <div class="profil">
         <h2>LO Tchu</h2>
-        <h3>B3 informatique, dev, Ynov Nantes</h3>
+        <h3>B3 Computer Science, dev, Ynov Nantes</h3>
         <a href="https://www.linkedin.com/in/tchu-lo-b07b79226/"
           ><img class="linkedin" src="https://zupimages.net/up/22/06/5t0a.png"
         /></a>
@@ -46,7 +46,7 @@
     <div class="row">
       <div class="profil">
         <h2>BOURRY Nathan</h2>
-        <h3>B1 informatique Ynov Nantes</h3>
+        <h3>B1 Computer Science Ynov Nantes</h3>
         <a href="https://www.linkedin.com/in/nathan-bourry-6a2709208/"
           ><img class="linkedin" src="https://zupimages.net/up/22/06/5t0a.png"
         /></a>
@@ -56,7 +56,7 @@
       </div>
       <div class="profil">
         <h2>CLAVIER Arnaud</h2>
-        <h3>B2 informatique Ynov Nantes</h3>
+        <h3>B2 Computer Science Ynov Nantes</h3>
         <a href="https://www.linkedin.com/in/arnaud-clavier-6594111b0/"
           ><img class="linkedin" src="https://zupimages.net/up/22/06/5t0a.png"
         /></a>
@@ -66,7 +66,7 @@
       </div>
       <div class="profil">
         <h2>NEIL Romain</h2>
-        <h3>B3 informatique, dev, Ynov Nantes</h3>
+        <h3>B3 Computer Science, dev, Ynov Nantes</h3>
         <a href="https://www.linkedin.com/in/romain-neil/"
           ><img class="linkedin" src="https://zupimages.net/up/22/06/5t0a.png"
         /></a>

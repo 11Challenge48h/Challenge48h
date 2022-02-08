@@ -2,6 +2,7 @@
 import Accueil from "./components/Accueil.vue";
 import Menu from "./components/Menu.vue";
 import Team from "./components/Team.vue";
+import Quiz from "./components/Quiz.vue";
 import { ref } from "vue";
 </script>
 

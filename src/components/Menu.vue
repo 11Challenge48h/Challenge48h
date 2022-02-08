@@ -1,5 +1,4 @@
 <script setup>
-
 </script>
     
 <template>
@@ -17,7 +16,6 @@
 </template>
 
 <style>
-
 .navbar {
   height: 100px;
   display: flex;
@@ -29,29 +27,24 @@
   right: 0;
   background: rgb(0, 0, 0); /*J'ai ajouté de la transparence*/
 }
-
 .logo {
   color: #ffffff;
   font-size: 45px;
 }
-
 .menu {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .logosw {
   height: 100px;
 }
-
 li {
   list-style: none;
   padding: 8px 20px 0 20px;
   font-size: 25px;
 }
-
 li::after {
   content: "";
   width: 0%;
@@ -60,11 +53,9 @@ li::after {
   display: block;
   margin: auto;
 }
-
 li:hover::after {
   width: 100%;
 }
-
 li .effet {
   text-decoration: none;
   color: #fff;
@@ -72,9 +63,7 @@ li .effet {
   font-weight: bold;
   transition: 0.4s ease-in-out;
 }
-
 li .effet:hover {
   color: rgba(240, 225, 14, 0.671);
 }
-
 </style>

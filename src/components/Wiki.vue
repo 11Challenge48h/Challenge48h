@@ -43,18 +43,6 @@ async function getPeople(url) {
     }
 }
 
-async function getterPeople(){
-    const options = {
-        method: "GET",
-        headers: {}
-    };
-    const response = await fetch(url, options)
-    if (response.status == 200) {
-        const data = await response.json();
-
-    }
-}
-
 async function getPlanet(url) {
     const options = {
         method: "GET",
@@ -158,9 +146,6 @@ function getUrl(ar){
     }
 }
 
-function addStyle(){
-
-}
 
 function hidePeople(){
     const targetDiv = document.getElementById("peopleData")
@@ -387,7 +372,7 @@ function showFilms(){
     </div>
 </div>
 
-<div id="films">
+<div id="films">    
     <div class="buttonFilms">
         <button @click="getFilms('http://swapi.dev/api/films')">Les films</button><br />
         <button @click="hideFilms">Afficher moins</button>
@@ -412,3 +397,7 @@ function showFilms(){
 </div>
 
 </template>
+
+<style scoped>
+    
+</style>

@@ -47,8 +47,8 @@
 		border-radius: 10px;
 		width: 150px;
 		
-		margin-left: auto;
-		margin-right: auto;
+		/*margin-left: auto;*/
+		/*margin-right: auto;*/
 		
 		color: white;
 	}

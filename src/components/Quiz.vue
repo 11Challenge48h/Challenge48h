@@ -96,7 +96,7 @@ questions.value.push([
 
 const points = ref(0);
 
-console.log("questions : ", questions.value);
+
 
 function addPoint() {
   points.value += 1;

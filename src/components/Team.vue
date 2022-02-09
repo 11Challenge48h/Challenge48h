@@ -95,7 +95,6 @@
   display: flex;
   justify-content: space-between;
 }
-
 .profil {
   flex-basis: 25%;
   background: black;
@@ -105,14 +104,12 @@
   margin: 50px;
   box-shadow: 15px 15px 15px;
 }
-
 .profil h2 {
   text-align: center;
   margin: 10px 0;
   color: white;
   font-size: xx-large;
 }
-
 .profil h3 {
   text-align: center;
   font-weight: 600;
@@ -120,7 +117,6 @@
   color: white;
   font-family: "Prompt";
 }
-
 .profil img {
   width: 100%;
   height: 100%;

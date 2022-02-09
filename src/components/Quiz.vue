@@ -176,7 +176,7 @@ async function loadData() {
 	
 	for(let i = 0; i < 6; i++) {
 		let cat = "";
-		let ra = rand(1, 4);
+		let ra = rand(1, 10);
 		
 		switch(rand(1, 3)) {
 			case 1:

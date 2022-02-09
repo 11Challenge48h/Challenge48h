@@ -7,6 +7,7 @@ const listStarship = ref([]);
 const listSpecies = ref([]);
 const listVehicles = ref([]);
 const listFilms = ref([]);
+
 const isPeopleShowed = ref(false);
 const isPlanetShowed = ref(false);
 const isVehicleShowed = ref(false);
@@ -19,31 +20,31 @@ const getTable = (data) => {
   return allowed;
 };
 
-async function getPeople() {
+async function getPeople(url) {
     const received = ref([]);
     const options = {
         method: "GET",
         headers: {}
     };
-    const response = await fetch('https://swapi.dev/api/people', options)
+    const response = await fetch(url, options)
     if (response.status == 200) {
         const data = await response.json();
         received.value = data.results;
         received.value.forEach((element) =>
         listPeople.value.push(element));
         if(data.next != null){
-            await getPeople(data.next);
+            await getPeople(data.next)
         }
     }
 }
 
-async function getPlanets() {
+async function getPlanets(url) {
     const received = ref([]);
     const options = {
         method: "GET",
         headers: {}
     };
-    const response = await fetch('https://swapi.dev/api/planets', options)
+    const response = await fetch(url, options)
     if (response.status == 200) {
         const data = await response.json();
         received.value = data.results;
@@ -55,13 +56,13 @@ async function getPlanets() {
     }
 }
 
-async function getStarships() {
+async function getStarships(url) {
     const received = ref([]);
     const options = {
         method: "GET",
         headers: {}
     };
-    const response = await fetch('https://swapi.dev/api/starships', options)
+    const response = await fetch(url, options)
     if (response.status == 200) {
         const data = await response.json();
         received.value = data.results;
@@ -73,13 +74,13 @@ async function getStarships() {
     }
 }
 
-async function getSpecies() {
+async function getSpecies(url) {
     const received = ref([]);
     const options = {
         method: "GET",
         headers: {}
     };
-    const response = await fetch('https://swapi.dev/api/species', options)
+    const response = await fetch(url, options)
     if (response.status == 200) {
         const data = await response.json();
         received.value = data.results;
@@ -91,31 +92,31 @@ async function getSpecies() {
     }
 }
 
-async function getVehicles() {
+async function getVehicles(url) {
     const received = ref([]);
     const options = {
         method: "GET",
         headers: {}
     };
-    const response = await fetch('https://swapi.dev/api/vehicles', options)
+    const response = await fetch(url, options)
     if (response.status == 200) {
         const data = await response.json();
         received.value = data.results;
         received.value.forEach((element) =>
         listVehicles.value.push(element));
         if(data.next != null){
-            await getVehicles(data.next);
+            await getVehicles(data.nextz);
         }
     }
 }
 
-async function getFilms() {
+async function getFilms(url) {
     const received = ref([]);
     const options = {
         method: "GET",
         headers: {}
     };
-    const response = await fetch('https://swapi.dev/api/films', options)
+    const response = await fetch(url, options)
     if (response.status == 200) {
         const data = await response.json();
         received.value = data.results;
@@ -146,12 +147,12 @@ function isFShowed(){
     isFilmShowed.value = !isFilmShowed.value;
 }
 
-getPeople();
-getPlanets();
-getStarships();
-getVehicles();
-getSpecies();
-getFilms();
+getPeople('https://swapi.dev/api/people');
+getPlanets('https://swapi.dev/api/planets');
+getStarships('https://swapi.dev/api/starships');
+getVehicles('https://swapi.dev/api/vehicles');
+getSpecies('https://swapi.dev/api/species');
+getFilms('https://swapi.dev/api/films');
 
 </script>
 

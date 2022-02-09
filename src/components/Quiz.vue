@@ -207,16 +207,6 @@ async function loadData() {
 
 loadData()
 
-    const r = await fetch(`${apiBase}/${cat}/${ra}`);
-
-    if (r.status === 200) {
-      const result = await r.json();
-
-      questions.value.push(createQuestion(cat, result));
-    }
-  }
-}
-loadData();
 function addPoint() {
   points.value += 1;
 }
